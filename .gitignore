@@ -4,4 +4,3 @@ env.prod
 .vscode
 __pycache__
 postgres
-.env
