@@ -2,7 +2,7 @@
   import { Router, Route, Link } from 'svelte-routing';
   import { isAuthenticated } from './store';
   import Login from './routes/Login.svelte';
-  import Registration from './routes/Registration.svelte';
+
   import Dashboard from './routes/Dashboard.svelte';
   import Profile from './routes/Profile.svelte';
   import Tickets from './routes/Tickets.svelte';
@@ -192,7 +192,6 @@
     {/if}
 
     <Route path="/" component={Login} />
-    <Route path="/register" component={Registration} />
 
     {#if !loggedIn}
       <Route path="/dashboard" component={Login} />

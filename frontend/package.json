@@ -25,10 +25,12 @@
     "vite": "^5.4.10"
   },
   "dependencies": {
+    "@carbon/charts": "^1.22.3",
     "@carbon/charts-svelte": "^1.22.3",
     "@vitejs/plugin-react": "^4.3.3",
     "@vitejs/plugin-react-swc": "^3.7.1",
     "chart.js": "^4.4.6",
+    "d3": "^7.9.0",
     "lucide-svelte": "^0.460.1",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
