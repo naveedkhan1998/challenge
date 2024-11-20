@@ -1,4 +1,8 @@
-export const BASE_URL = "http://localhost:8000/api";
+const BASE_URL2 = import.meta.env.VITE_BASE_URL;
+if (!BASE_URL2) {
+  const BASE_URL2 = "http://localhost:8000/api";
+}
+export const BASE_URL = BASE_URL2;
 
 export async function apiFetch(endpoint: string, options?: RequestInit) {
   // Prepare headers
