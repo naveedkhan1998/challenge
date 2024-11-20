@@ -41,7 +41,7 @@
   
         if (response.token) {
           isAuthenticated.set(true);
-          localStorage.setItem('token', response.token);
+          localStorage.setItem('token', response.token.access);
           navigate('/dashboard');
         }
       } catch (error) {
@@ -71,7 +71,7 @@
   
         if (response.token) {
           isAuthenticated.set(true);
-          localStorage.setItem('token', response.token);
+          localStorage.setItem('token', response.token.access);
           navigate('/dashboard');
         }
       } catch (error) {
