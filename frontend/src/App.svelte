@@ -170,7 +170,7 @@
   }
 </style>
 
-<Router>
+<Router >
   <nav>
     <div class="nav-container">
       {#if loggedIn}
