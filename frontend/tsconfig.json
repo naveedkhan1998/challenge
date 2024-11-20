@@ -5,9 +5,12 @@
     "useDefineForClassFields": true,
     "module": "ESNext",
     "resolveJsonModule": true,
+    "types": ["@sveltejs/kit"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "$lib": ["./src/lib"],
+      "$lib/*": ["./src/lib/*"]
     },
     /**
      * Typecheck JS in `.svelte` and `.js` files by default.
@@ -21,5 +24,6 @@
     "moduleDetection": "force"
   },
   "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

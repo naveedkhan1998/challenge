@@ -31,7 +31,7 @@ urlpatterns = (
         path("api/", health_check, name="health_check"),
         path("admin/", admin.site.urls, name="admin"),
         path("api/account/", include("apps.account.urls")),
-        path("api/ticket/", include("apps.ticket.urls")),
+        path("api/ticket/", include("apps.tickets.urls")),
     ]
     + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
