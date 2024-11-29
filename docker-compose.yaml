@@ -58,6 +58,8 @@ services:
       context: frontend/
       dockerfile: Dockerfile
     container_name: challenge-frontend
+    env_file:
+      - ./.envs/env.dev
     environment:
       - WATCHPACK_POLLING=true
     volumes:
